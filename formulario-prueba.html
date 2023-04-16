@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica HTML 21/02/2023</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    
+    
+    <main class="box">
+      <div>
+            <div class="icons" id="cerrar">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-circle-x" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ff2825" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+              <circle cx="12" cy="12" r="9" />
+              <path d="M10 10l4 4m0 -4l-4 4" />
+            </svg>
+            </div>
+          <form class="sombra" id="myForm" action="submit.php" method="post">
+            
+            <h1 class="titulo">FORMULARIO DE SOLICITUD DE BECA</h1>
+            
+            <div class="borde">
+              <input type="text" placeholder="Nombre">
+            </div>
+            <div class="borde">
+              <input type="text" placeholder="Apellido">
+            </div>
+            
+
+            <h2>Fecha de nacimiento</h2>
+            <div class="borde-1">
+              <input type="date">
+            </div>
+
+            <h2>Seleccionar género</h2>
+            <div class="genero">
+                <div class="masculino">
+                  <label class="masculino">
+                    <input type="radio" name="genero" value="masculino">
+                    Masculino
+                  </label>
+              </div>
+                <br>
+                <label>
+                  <input type="radio" name="genero" value="femenino">
+                  Femenino
+                </label>
+            </div>
+            <!-- fin de clase genero -->
+            <div class="borde-email carreras">
+              <input type="email" placeholder="email"> <br>
+            </div>
+            
+            <select name="carreras" class="carreras">
+                <option value="carreras">Carreras</option>
+                <option value="Educacion">Educacion</option>
+                <option value="Informatica">Informatica</option>
+                <option value="Idioma">Idioma</option>
+                <option value="Contaduria">Contaduria</option>
+            </select>
+            
+            
+            <div class="seleccion">
+              <div>
+              <input type="checkbox" name="materias" value="Ingles">
+              <label>Ingles</label>
+              </div>
+              <div>
+              <input type="checkbox" name="materias" value="Matematica">
+              <label>Matematica</label> <br>
+              </div>
+              <div>
+              <input type="checkbox" name="materias" value="Algoritmos">
+              <label>Algoritmos</label>
+              </div>
+              <div>
+              <input type="checkbox" name="materias" value="Programacion">
+              <label>Programación</label> <br>
+              </div>
+              <div>
+              <input type="checkbox" name="materias" value="derecho">
+              <label>Derecho</label>
+              </div>
+              <div>
+              <input type="checkbox" name="materias" value="Logica">
+              <label>Lógica</label> <br>
+              </div>
+            </div>
+
+            <textarea name="msg" cols="30" rows="10" placeholder="Motivo de solicitud de beca"></textarea>
+            <br>
+
+            <!-- <button class="button" type="submit">Enviar</button> -->
+           
+            <a href="#" class="button" onclick="document.getElementById('myForm').submit()"> Enviar</a>
+          </form>
+      </div>
+    </main>
+    <script src="js/01.js"></script>
+  </body>
+</html>
